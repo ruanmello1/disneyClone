@@ -126,6 +126,7 @@ const Home = ({videos, account}) => {
         <div id="disney">
           <Section genre={"Disney"} videos={filterVideos(videos, "disney")}/>
         </div>
+        
         <div id="pixar">
           <Section  className={"pixar"} genre={"Pixar"} videos={filterVideos(videos, "pixar")}/>
         </div>
