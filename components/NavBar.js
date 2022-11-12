@@ -6,7 +6,7 @@ const NavBar = ({account}) => {
     return(
         <div className="navbar">
             <div className="logo-wrapper">
-                <Link href="/"><Image src={logo} alt="Disney Logo" width={90} height={50} /></Link>
+                <Link href="/"><Image src={logo} alt="Disney Logo" width={120} height={60} /></Link>
             </div>
             
             <div className="account-info">
