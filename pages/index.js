@@ -139,7 +139,7 @@ const Home = ({videos, account}) => {
         <div id="nat-geo">
           <Section genre={"National Geographic"} videos={filterVideos(videos, "national-geographic")}/>
         </div>
-
+ 
         <div id="marvel">
           <Section genre={"Marvel"} videos={filterVideos(videos, "marvel")}/>
         </div>
