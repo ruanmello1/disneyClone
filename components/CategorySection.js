@@ -10,7 +10,7 @@ const CategorySection = ({genre, videos}) => {
         <div>
             <div className="button-section">
                 <Link href="/"><Image className="back-image" alt="back image" src={back} /></Link>  
-                <h2 className="category-title">{genre.toUpperCase()}</h2>
+                <h2 className="category-title">{genre.toUpperCase().replace("-", " ")}</h2>
             </div>
             <div className="category-videos">
                 {videos.map(video => (

@@ -10,7 +10,7 @@ export const getServerSideProps = async (pageContext) => {
         }
     });
 
-    const genre = pageContext.query.tag.toLowerCase();
+    const genre = pageContext.query.tag.replace(" ", '-').toLowerCase();
     
     console.log(genre)
 

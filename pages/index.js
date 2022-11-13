@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from 'next/image';
 import NavBar from '../components/NavBar';
 import Section from '../components/Section';
+import RecommendedSection from '../components/RecommendedSection';
 import disney from '../public/disney-button.png';
 import marvel from '../public/marvel-button.png';
 import natgeo from '../public/natgeo-button.png';
@@ -119,7 +120,7 @@ const Home = ({videos, account}) => {
             </div>
         </section>
 
-        <Section genre={"Recommended for you"} videos={unSeenVideos(videos)}/>
+        <RecommendedSection genre={"Recommended for you"} videos={unSeenVideos(videos)}/>
         <Section genre={"Family"} videos={filterVideos(videos, "family")}/>
         <Section genre={"Thriller"} videos={filterVideos(videos, "thriller")}/>
         <Section genre={"Classic"} videos={filterVideos(videos, "classic")}/>
