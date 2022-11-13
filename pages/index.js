@@ -23,7 +23,7 @@ export const getStaticProps = async () => {
 
   const videosQuery = gql `
     query Videos {
-      videos {
+      videos (first: 500) {
         createdAt,
         id,
         title,
