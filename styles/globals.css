@@ -185,6 +185,27 @@ a {
     max-height: 390px;
     overflow: hidden;
   }
+
+  .video-image {
+    width: 100%;
+    position: relative;
+    top: 0;
+    height: 50vh;
+    margin-top: 50px;
+  }
+
+  .info {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    max-width: 83%;
+    height: auto;
+    min-height: 180px;
+  }
+
+  .video {
+    height: 85vh;
+  }
 }
 
 @media (max-width: 750px) {
@@ -216,6 +237,14 @@ a {
     margin-bottom: 15px;
     margin-right: 1.1%;
   }  
+
+  .video-image {
+    height: 40vh;
+  }
+
+  .info {
+    margin-top: 10%;
+  }
 }
 
 @media (max-width: 450px) { 
@@ -254,6 +283,7 @@ a {
     margin-left: 5%;
     margin-bottom: 15px;
   }  
+
 }
 
 
