@@ -70,7 +70,6 @@ const Video = ({video}) => {
     return (
         <>
             <title>{newTitle}</title>
-            
             {!watching && <img className="video-image" src={video.thumbnail.url} alt={video.title} />}
             {!watching && <div className="info">
                 <p>{(video.tags.join(" | ")).toUpperCase()}</p>

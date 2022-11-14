@@ -164,5 +164,99 @@ a {
   margin-top: 20px;
 }
 
+@media (max-width: 1040px) {  
+  .main-video {   
+    height: 38vh;  
+  }
+
+  .main-video img{   
+    height: 100%;  
+    width: 100%;
+  }
+
+  .card {
+    width: 30%;
+    height: 150px;    
+    margin-right: auto;
+    margin-left: 15px;
+  }
+
+  .section {
+    max-height: 390px;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 750px) {
+  .main-video {   
+    height: 25vh;  
+    width: 100%;
+  }
+
+  .main-video img{   
+    height: 100%;  
+    width: 100%;
+  }
+  
+  .card {
+    width: 46%;
+    margin-right: auto;
+    margin-left: 15px;
+  }
+
+  .section {
+    max-height: 555px;
+    overflow: hidden;
+  }
+
+  .franchise {
+    min-width: 23%;
+    background-color: #1E2841;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    margin-right: 1.1%;
+  }  
+}
+
+@media (max-width: 450px) { 
+  .main-video {   
+    height: 18vh;  
+    margin-bottom: 40px;
+    width: 100%;
+  }
+
+  .main-video img{   
+    height: 100%;  
+    width: 100%;
+  }
+  
+  .card {
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 15px;
+    height: 180px;
+  }
+
+  .section {
+    max-height: 870px;
+    overflow: hidden;
+  }
+
+  .video-feed {    
+    display: flex;
+    flex-direction: column;
+  }
+
+  .franchise {
+    width: 90%;
+    background-color: #1E2841;
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-bottom: 15px;
+  }  
+}
+
+
+
 
 

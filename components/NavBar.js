@@ -4,10 +4,7 @@ import logo from '../public/disney.png'
 
 const NavBar = ({account}) => {
     return(
-        <>
-            <head>
-                <title>Disney+ Clone</title>
-            </head>
+        <> <title>Disney+ Clone</title>            
 
             <div className="navbar">
                 <div className="logo-wrapper">
