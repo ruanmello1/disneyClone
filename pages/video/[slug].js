@@ -57,8 +57,20 @@ const changeToSeen = async (slug) => {
 const Video = ({video}) => {
     const [watching, setWatching] = useState(false);
     console.log(video)
+
+    let videoSlug = video.slug.replaceAll("-", " ").split(" ");
+    let newTitle = "";
+    for(let word of videoSlug) {
+       word = word.split("");
+       word[0] = word[0].toUpperCase();
+       word = word.join("");
+       newTitle += ` ${word}`
+    }
+
     return (
         <>
+            <title>{newTitle}</title>
+            
             {!watching && <img className="video-image" src={video.thumbnail.url} alt={video.title} />}
             {!watching && <div className="info">
                 <p>{(video.tags.join(" | ")).toUpperCase()}</p>

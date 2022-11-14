@@ -48,8 +48,22 @@ export const getServerSideProps = async (pageContext) => {
 }
 
 const Videos = ({videos, genre}) => {
+    let genreUC = genre.replaceAll("-", " ").split(" ");
+    let newTitle = "";
+    for(let word of genreUC) {
+       word = word.split("");
+       word[0] = word[0].toUpperCase();
+       word = word.join("");
+       newTitle += ` ${word}`
+    }
+    
     return(
-        <CategorySection genre={genre} videos={videos}></CategorySection>
+        <>
+            <head>
+                <title>{newTitle}</title>
+            </head>
+            <CategorySection genre={genre} videos={videos}></CategorySection>
+        </>
     )
 }
 
